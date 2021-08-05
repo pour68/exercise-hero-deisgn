@@ -11,6 +11,33 @@ body {
     font-weight: 400;
 }
 
+.nav {
+    background-color: #3f3d56;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 76px;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 0.5rem  0 0;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.navbar img {
+    width: 100%;
+    max-width: 35px;
+}
+
 .container {
     width: 100%;
     max-width: 1100px;
@@ -64,6 +91,28 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .nav__links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav {
+        padding:1rem;
+    }
+
+    .navbar img {
+        display: none;
+    }
+
+
     .hero {
         grid-template-columns: 1fr;
     }
